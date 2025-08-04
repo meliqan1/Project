@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: crimsontext;
+    src: url(fonts/CrimsonText-Bold.ttf);
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #74C69D;
+    color: white;
+    padding: 8px;
+    font-family: worksans;
+     position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: flex;
+    gap: 18px;
+    margin-left: 130px;
+
+}
+
+.header-logo a {
+    display: flex;
+    gap: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 450px;
+    font-size: 20px;
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+   padding: 50px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    text-align: center;
+
+}
+
+strong {
+    font-size: 15px;
+    font-family: worksans;
+    color: #212529;
+    opacity: 50%;
+}
+
+button {
+    background-color: #212529;
+    color: white;
+    font-family: worksans;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: white;
+    max-width: fit-content;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: black 5px 5px 3px;
+    cursor: pointer;
+}
+
+.card-content {
+    justify-content: center;
+    display: flex;
+    gap: 105px;
+    
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    
+
+
+    gap: 10px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 40px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  
+}
+
+.card p {
+    font-family: worksans;
+    font-size: 15px;
+}
+
+.card h1 {
+    font-size: 40px;
+    font-family: worksans;
+}
+
+span {
+    text-align: start;
+
+}
+
+footer {
+    padding: 20px;
+    font-size: 20px;
+    font-family: worksans;
+    color: white;
+    background-color: #74C69D;
+    justify-content: space-between;
+   margin-top: 280px;
+
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon-content {
+    display: flex;
+    gap: 20px;
+
+}
+@media only screen and (max-width:768px) {
+    .text-content {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .card-content {
+        flex-direction: column;
+    }
+    .card {
+        flex-direction: column;
+    }
+   /*  span {
+        flex-direction: column;
+    }
+    */
+    nav {
+     display: none;
+    }
+}

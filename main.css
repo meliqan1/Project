@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: crimsontext;
+    src: url(fonts/CrimsonText-Bold.ttf);
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #74C69D;
+    color: white;
+    padding: 8px;
+    font-family: worksans;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: flex;
+    gap: 18px;
+    margin-left: 130px;
+
+}
+
+.header-logo a {
+    display: flex;
+    gap: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 450px;
+    font-size: 20px;
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.green-sec {
+    background-color: #74C69D;
+}
+
+.row {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.row1 {
+     display: flex;
+    gap: 350px;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+
+
+/* პირველი ღილაკი */
+    {
+    background-color: white;
+    color: black;
+    font-family: worksans;
+    margin-top: 10px;
+    padding: 10px 45px 10px 45px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: white;
+    max-width: fit-content;
+}
+
+/* .text-content button {
+    margin-top: 10px;
+    padding: 10px 45px 10px 45px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: white;
+    max-width: fit-content; */
+
+
+button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: black 5px 5px 3px;
+    cursor: pointer;
+}
+
+.text-content h3 {
+    font-family: worksans;
+}
+
+.text-content h1 {
+    font-family: crimsontext;
+    font-size: 40px;
+}
+
+.text-content p {
+    font-family: worksans;
+    font-size: 15px;
+
+}
+
+.sec2
+
+/* textcontent */
+    {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.firstimg {
+    margin-left: px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-content {
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    position: relative;
+    bottom: 50px;
+    
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+button {
+    background-color: #212529;
+    color: white;
+    font-family: worksans;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: white;
+    max-width: fit-content;
+}
+
+.card-content {
+    display: flex;
+    gap: 47px;
+
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+footer {
+    padding: 20px;
+    font-size: 20px;
+    font-family: worksans;
+    color: white;
+    background-color: #74C69D;
+    justify-content: space-between;
+
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon-content {
+    display: flex;
+    gap: 20px;
+
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .column {
+        flex-direction: column;
+    }
+
+    .img-content {
+        flex-direction: column;
+    }
+
+    .card-content {
+        flex-direction: column;
+    }
+
+    .row1 {
+        flex-direction: column-reverse;
+        gap: 100px;
+        
+    }
+    .row1 img {
+        margin-top: 30px;
+        scale: 1.5;
+    }
+
+    nav {
+        display: none;
+    }
+    img {
+        max-width: 100%;
+    }
+}

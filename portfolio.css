@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: crimsontext;
+    src: url(fonts/CrimsonText-Bold.ttf);
+}
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #74C69D;
+    color: white;
+    padding: 8px;
+    font-family: worksans;
+     position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-logo {
+    display: flex;
+    gap: 18px;
+    margin-left: 130px;
+
+}
+.header-logo a {
+    display: flex;
+    gap: 30px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 450px;
+    font-size: 20px;
+}
+li:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    font-weight: 900;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.row {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+  
+   
+    
+}
+
+button {
+   /*  position: relative;
+    left: 1150px; */
+    background-color:#212529;
+    color: white;
+    font-family: worksans;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: white;
+    max-width: fit-content;
+   
+}
+button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: black 5px 5px 3px;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.img-content {
+    justify-content: center;
+    display: flex;
+    gap: 55px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer {
+    padding: 20px;
+    font-size: 20px;
+    font-family: worksans;
+    color: white;
+    background-color: #74C69D;
+    justify-content: space-between;
+    
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon-content {
+    display: flex;
+    gap: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .row {
+     flex-direction: column;
+    }
+    .text-content {
+         flex-direction: column;
+    }
+    .img-content {
+         flex-direction: column;
+    }
+    .card {
+         flex-direction: column;
+    }
+    .footer-row{
+         flex-direction: column;
+    }
+    nav {
+        display: none;
+    }
+    img {
+        max-width: 100%;
+    }
+}
